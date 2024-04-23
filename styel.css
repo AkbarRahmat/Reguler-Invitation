@@ -1,0 +1,216 @@
+@font-face {
+    font-family: "forelle";
+    src: url(assets/font/Forelle.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  width: 360px;
+  height: 800px;
+  background-image: url(assets/img/framehijau.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 120px;
+  text-align: center;
+  color: #6c7a88;
+}
+
+.content {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: all 1s ease-in-out;
+}
+
+.content.fade-in {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.cover .content h1 {
+  font-size: 50px;
+  font-weight: 100;
+  font-family: "forelle";
+  color: #7DD891;
+}
+
+.mempelai .content {
+  position: relative;
+  width: 75%;
+  top: 50px;
+}
+
+.mempelai .content h1 {
+  font-size: 50px;
+  font-weight: 100;
+  font-family: "forelle";
+  color: #7DD891;
+  margin: 10px 0;
+}
+
+.mempelai .content p {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.mempelai .content .female p {
+  margin-bottom: 10px;
+}
+
+.mempelai .content h2 {
+  margin-bottom: 10px;
+}
+
+.mempelai .content img {
+  width: 40%;
+  border: #D2ECD8 double;
+  border-radius: 10%;
+}
+
+.acara .content .countdown {
+  display: flex;
+  justify-content: center;
+}
+
+.acara .content .countdown div {
+  font-size: 18px;
+  margin: 0 10px;
+  background-color: #7DD891;
+  color: #ffff;
+  padding: 14px;
+  margin: 20px 5px;
+  line-height: 30px;
+}
+
+.acara .content p {
+  margin-bottom: 10px;
+}
+
+.lokasi .content {
+  width: 75%;
+}
+
+.lokasi .content p {
+  margin-top: 10px;
+}
+
+.lokasi .content h2 {
+  font-size: 18px;
+}
+
+.lokasi .content iframe {
+  width: 230px;
+  height: 230px;
+  margin: 20px 0;
+  border: #7DD891 solid;
+  border-radius: 5px;
+}
+
+.ucapan .content {
+  width: 75%;
+  margin-top: 100px;
+}
+
+.ucapan .content h1 {
+  margin-bottom: 20px;
+}
+
+.ucapan .content .nama h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.ucapan .content p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.ucapan .content .nama {
+  display: flex;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.ucapan .content .nama h1 {
+  font-family: "forelle";
+}
+
+nav {
+  position: fixed;
+  bottom: 0;
+  width: 360px;
+  background-color: #ffffff; 
+  z-index: 9999;  
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 10px;
+  opacity: 0.5;
+  gap: 8px;
+  transition: opacity 0.3s;
+}
+
+nav li button {
+  width: 63px;
+  height: 63px;
+  border: 1px solid #CDE1D1;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+}
+
+nav .select{
+  background-color: #7DD891;
+  color: white;
+}
+
+nav li button {
+  display: block;
+  color: #333;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  background-color: transparent;
+}
+
+nav li button i {
+  font-size: 30px;
+  color: #333;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.8);
+  transition: all 0.2s ease-in-out;
+}
+
+nav li button.select i{
+  color: #ffffff;
+}
+
+nav li button p {
+  font-size: 12px;
+  margin: 0;
+  transition: all 0.2s ease-in-out;
+}
+ 
